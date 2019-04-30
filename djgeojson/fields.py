@@ -59,7 +59,7 @@ class GeoJSONField(JSONField):
     geom_type = 'GEOMETRY'
 
     def formfield(self, **kwargs):
-        kwargs.setdefault('geom_type', self.geom_type)
+        #kwargs.setdefault('geom_type', self.geom_type)
         return super(GeoJSONField, self).formfield(**kwargs)
 
 
